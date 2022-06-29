@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './App.css';
 
 import Header from './components/header';
+import SearchBar from './components/searchBar';
 import SearchResult from './components/searchResult';
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <div>
       <Header />
       {/* Searchbar Go Here. */}
+      <SearchBar setUrl={setUrl} />
 
       <SearchResult url={url} />
     </div>
