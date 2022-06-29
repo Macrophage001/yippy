@@ -1,19 +1,22 @@
-import React  from 'react';
+import React from 'react';
 import { useState } from 'react';
 import axios from 'axios';
 
-const SearchBar = (props)=> {
-    const [search, setSearch] = useState('');
-    const [result, setResult] = useState({});
+const API_KEY = 'Vsii7a68GfAOzpDNqf6k9e69U1JtfnlC';
 
-        const doSearch = async()=>{
-            const response = await axios.get("api.giphy.com/v1/gifs/search",{ params: { api_key: 'mBe4ig1gEFbTUtwNTTDyFcVJ4KdbqqGF',
-             q:"cheeseburgers" } }
-            )
-            setResult(response.data)
-            console.log(response.data)
-            // props.setUrl()
-        }
+const SearchBar = (props) => {
+  const [search, setSearch] = useState('cheeseburgers');
+  const [result, setResult] = useState({});
+
+  const doSearch = async () => {
+    const response = await axios.get("https://api.giphy.com/v1/gifs/search", {
+      params: {
+        api_key: API_KEY,
+        q: search
+      }
+    });
+    console.log(response.data.data[0]);
+  }
 
   return (
     <div>

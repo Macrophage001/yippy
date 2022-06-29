@@ -13,7 +13,6 @@ const App = () => {
       <Header />
       {/* Searchbar Go Here. */}
       <SearchBar setUrl={setUrl} />
-
       <SearchResult url={url} />
     </div>
   );
