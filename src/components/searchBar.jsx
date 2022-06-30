@@ -6,7 +6,7 @@ import '../styles/searchBar.css';
 
 
 // Darnell API: Vsii7a68GfAOzpDNqf6k9e69U1JtfnlC
-const API_KEY = 'API KEY GOES HERE';
+const API_KEY = 'Vsii7a68GfAOzpDNqf6k9e69U1JtfnlC';
 
 const tryCatch = (t, e = (err) => console.error(err)) => {
   return (...args) => {
