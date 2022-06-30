@@ -19,7 +19,7 @@ const tryCatch = (t, e = (err) => console.error(err)) => {
 };
 
 const SearchBar = (props) => {
-  const [search, setSearch] = useState('cheeseburgers');
+  const [search, setSearch] = useState('');
 
   const { setUrl } = props;
 
@@ -43,7 +43,7 @@ const SearchBar = (props) => {
   return (
     <div className='search-bar'>
       <form className='search-form' onSubmit={handleSubmit}>
-        <input type="text" value={search} onChange={handleChange} />
+        <input type="text" value={search} placeholder="Search..." onChange={handleChange} />
         <button type="submit" className="btn btn-primary">
           <img src="assets/search.png" alt="search-icon" style={{ width: '75%', height: '75%' }} />
         </button>
