@@ -11,7 +11,8 @@ const API_KEY = 'Vsii7a68GfAOzpDNqf6k9e69U1JtfnlC';
 const tryCatch = (t, e = (err) => console.error(err)) => {
   return (...args) => {
     try {
-      return t.apply(this, ...args);
+      console.log(...args);
+      return t.apply(this, args);
     } catch (err) {
       return e(err);
     }
@@ -37,7 +38,7 @@ const SearchBar = (props) => {
         }
       });
       setUrl(response.data.data[0].images.original.url);
-    })();
+    })('hello', 'world');
   }
 
   return (
