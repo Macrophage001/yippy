@@ -1,0 +1,24 @@
+.search-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-header {
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+}
+
+.search-header::after {
+    content: "";
+    left: 0;
+    top: 5rem;
+    position: absolute;
+    background-image: linear-gradient(to right, #9933ff, #e245b9, #fce2ac);
+    width: 100%;
+    height: 6px;
+}

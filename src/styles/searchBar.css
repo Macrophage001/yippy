@@ -1,0 +1,18 @@
+.search-form {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    padding: 0.5rem;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-form button {
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+    background-image: linear-gradient(to right bottom, #9933ff, #e245b9);
+    border: none;
+}

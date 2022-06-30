@@ -9,9 +9,8 @@ const App = () => {
   const [url, setUrl] = useState('');
 
   return (
-    <div>
+    <div className='search-main'>
       <Header />
-      {/* Searchbar Go Here. */}
       <SearchBar setUrl={setUrl} />
       <SearchResult url={url} />
     </div>
