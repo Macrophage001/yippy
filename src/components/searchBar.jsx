@@ -38,7 +38,7 @@ const SearchBar = (props) => {
         }
       });
       setUrl(response.data.data[0].images.original.url);
-    })('hello', 'world');
+    })();
   }
 
   return (
